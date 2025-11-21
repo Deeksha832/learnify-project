@@ -110,7 +110,7 @@ const StudentViewCourseDetailsPage = () => {
               auth?.user?._id
             );
 
-          console.log("coursePurchaseInfoResponse", coursePurchaseInfoResponse);
+          // console.log("coursePurchaseInfoResponse", coursePurchaseInfoResponse);
 
           if (
             coursePurchaseInfoResponse?.success &&

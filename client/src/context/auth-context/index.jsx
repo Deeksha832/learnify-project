@@ -1,4 +1,4 @@
-import { Skeleton } from "@/components/ui/skeleton";
+  import { Skeleton } from "@/components/ui/skeleton";
 import { initalSignInFormData, initalSignUpFormData } from "@/config";
 import { checkAuthService, loginService, registerService } from "@/services";
 import { createContext, useEffect, useState } from "react";
@@ -113,7 +113,7 @@ export default function AuthProvider({ children }) {
     });
   };
 
-  console.log("Auth user", auth);
+  // console.log("Auth user", auth);
 
   return (
     <AuthContext.Provider
