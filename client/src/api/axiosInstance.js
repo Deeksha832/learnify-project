@@ -1,12 +1,7 @@
 import axios from "axios";
 
-const baseURL =
-  process.env.NODE_ENV === "production"
-    ? process.env.BACKEND_URL
-    : "http://localhost:5000";
-
 const axiosInstance = axios.create({
-  baseURL,
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 axiosInstance.interceptors.request.use(
