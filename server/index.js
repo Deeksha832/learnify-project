@@ -17,9 +17,9 @@ const corsOptions = {
   origin: [
     "https://learning-management-system-lms-gray.vercel.app",
     "http://localhost:5173",
-    "learnify-project-omega.vercel.app"
+    "https://learnify-project-omega.vercel.app"
   ],
-  methods: ["GET", "POST", "DELETE", "PUT"],
+  methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
