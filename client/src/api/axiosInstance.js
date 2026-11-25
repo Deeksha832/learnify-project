@@ -2,7 +2,7 @@ import axios from "axios";
 
 const baseURL =
   process.env.NODE_ENV === "production"
-    ? "http://localhost:5000"
+    ? process.env.BACKEND_URL
     : "http://localhost:5000";
 
 const axiosInstance = axios.create({
